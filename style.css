@@ -63,8 +63,105 @@ h1, h2, h3, h4, h5, h6{
     display: inline-block;
     padding: 10px 30px;
     text-decoration: none;
-    color: gray;
+    color: white;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
+}
+
+.left-navigation {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 0.5;
+}
+
+.left-navigation a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+/* main styles */
+
+.main-title-container{
+    font-size: 2.2rem;
+    color: white;
+    max-width: 500px;
+    float: right;
+    position: absolute;
+    top: 30%;
+    right: 40px;
+    margin-left: 20px;
+}
+
+.main-title-container button{
+    background-color: #867409;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px 20px;
+}
+
+@keyframes MoveUpDown {
+    0%, 
+    100%{
+        bottom: 50px;
+    }
+
+    50%{
+        bottom: 70px;
+    }
+}
+
+
+
+.arrow-down-navigation{
+    animation: MoveUpDown 2.5s ease-in-out infinite;
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.arrow-down-navigation:hover{
+    color: lightblue;
+}
+
+.skyscrap-row{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.skyscrap-row .img-container{
+    width: 50%;
+}
+
+.skyscrap-row .img-container img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.skyscrap-row .text-container{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skyscrap-row .text-container h2{
+    font-size: 30px;
 }
