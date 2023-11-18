@@ -1,0 +1,70 @@
+/* import fonts */
+/* roboto regular 400 and roboto bold 700 for par*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+/* domine regular 400 and roboto bold 700 for headings*/
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Roboto" sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Domine" serif;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* navigation */
+.outer-navigation{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(https://images.unsplash.com/photo-1443527394413-4b820fd08dde?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+}
+
+
+.nav-content{
+    max-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    height: 100vh;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation a:hover{
+    color: lightblue;
+}
+
+.right-navigation{
+    flex: 0.5;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.right-navigation .login-link{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: gray;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
