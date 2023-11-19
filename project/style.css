@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.outer-navigation{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(https://images.unsplash.com/photo-1443527394413-4b820fd08dde?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.navbar{
+    width: 85;
+    margin:auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+
+}
+
+
+.navbar ul li{
+    font-size: 16px;
+    padding: 10px;
+    display: flex;
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.navbar .logo{
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.nav-content{
+    max-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    height: 100vh;
+}
+
+
+.showcase-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.showcase-content h1{
+    font-size: 40px;
+    margin-top: 80px;
+
+}
+
+.showcase-content p{
+    margin: 20px auto;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+@keyframes MoveUpDown {
+    0%, 
+    100%{
+        bottom: 50px;
+    }
+
+    50%{
+        bottom: 70px;
+    }
+}
+
+
+
+.arrow-down-navigation{
+    animation: MoveUpDown 2.5s ease-in-out infinite;
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.arrow-down-navigation:hover{
+    color: lightblue;
+}
+
+.skyscrap-row{
+    display: flex;
+    max-width: 2000px;
+    margin: 0 ;
+    flex-wrap: wrap;
+}
+
+.skyscrap-row .img-container{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.skyscrap-row .img-container img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.skyscrap-row .text-container{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skyscrap-row .text-container h2{
+    font-size: 30px;
+}
+
+.our-mission{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1531972111231-7482a960e109?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-attachment: fixed;
+    background-position: center 10px;
+    min-height: 500px;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+
+}
+
+.our-mission h2{ 
+    font-size: 2rem;
+}
+
+.our-mission p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.our-mission button{
+    border: 1px solid white;
+    padding: 10px 30px;
+    background-color: transparent;
+    color: white;
+}
+
+.our-mission button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.contact-form{
+    padding: 30px;
+    background-color:aliceblue;
+    text-align: center;
+}
+
+.contact-form form{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input {
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.contact-form textarea{
+    width: 100%;
+}
+
+.contact-form button{
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+    text-align: center;
+
+}
