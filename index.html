@@ -22,7 +22,7 @@
         <div class="nav-content">
             <nav class="navigation" role="navigation">
                 <ul class="left-navigation">
-                    <li><a href="/">Strona Główna</a></li>
+                    <li><a href="./index.html">Strona Główna</a></li>
                     <li><a href="./localization.html">Lokalizacja</a></li>
                 </ul>
                 <div class="right-navigation">
@@ -36,6 +36,14 @@
             <!-- arrow down -->
             <div>
                 <i class="fa fa-solid fa-angle-down arrow-down-navigation" id="scroll-icon"></i>
+            </div>
+            <div class="mobile-navigation">
+                <i class="fa-solid fa-bars"></i>
+                <ul>
+                    <li><a href="./index.html">Strona Główna</a></li>
+                    <li><a href="./localization.html">Lokalizacja</a></li>
+                    <li><a href="./login.html" class="login-link">Login</a></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -62,8 +70,37 @@
             </div>
         </div>
 
-    </main>
+        <div class="our-mission">
+            <h2 class="text-center">Our mission</h2>
+            <p>print down the mission here</p>
+            <button>Learn more</button>
+        </div>
 
+        <div class="contact-form">
+            <form>
+                <h2>Contact Us</h2>
+                <label for="name">Your name: </label>
+                <input type="text" placeholder="Your name" id="name" required> <br />
+
+                <label for="email">Your email: </label>
+                <input type="email" placeholder="Your email" id="email" required> <br />
+                <label for="message">Your message</label><br/>
+                <textarea id="message" rows="8" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Skyscraper fictional webpage</p>
+    </footer>
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer">
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
     
 </body>
 </html>
