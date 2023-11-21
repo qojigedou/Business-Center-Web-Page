@@ -311,7 +311,7 @@ footer {
     width: 48%;
 }
 
-.service-nearby h1{
+.service-nearby h1, .place-to-have h1{
     text-align: center;
     padding-bottom: 50px;
 }
@@ -381,3 +381,8 @@ footer {
     object-fit:cover;
 }
 
+.free-place-text{
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+}
