@@ -1,11 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;   
     text-decoration: none;
 }
 
+/* .body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
 .outer-navigation{
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(https://images.unsplash.com/photo-1443527394413-4b820fd08dde?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     height: 100vh;
@@ -332,5 +334,50 @@ footer {
 .column-service {
     width: 48%;
     padding-bottom: 20px;
+}
+
+.food-service{
+    color: black;
+    font-size: 2rem;
+}
+
+.contact-info h1{
+    text-align: center;
+    justify-content: space-between;
+
+}
+
+.contact-info p{
+    text-align: center;
+    max-width: 1000px; 
+    margin: 0 auto;
+}
+
+.cards-container{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.card img{
+    width: 100%;
+    height: 300px;
+    object-fit:cover;
 }
 
