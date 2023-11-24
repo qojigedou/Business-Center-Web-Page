@@ -3,45 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--font awesome-->
-    <link 
-        rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
-        crossorigin="anonymous" 
-        referrerpolicy="no-referrer" 
-    />
-
-    <link rel="stylesheet" href="./style.css" />
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/navigation.css" />
     <title>Business Center</title>
+    <script src="https://kit.fontawesome.com/18ab740b53.js" crossorigin="anonymous"></script>
+    <script src="./js/index.js" type="module" defer></script>
 </head>
 <body>
+    <div class="navigation-bar">
+        <a href="#" class="logo">Business Center</a>
+        <ul>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="./html/localization.html">Lokalizacja</a></li>
+            <li><a href="./html/free_place.html">Dostępne Powierzchnie</a></li>
+            <li><a href="./html/contact.html">Kontakt</a></li>
+        </ul>
+    </div>
+
+    <div class="showcase-content">
+        <div class="showcase-text">
+            <h1>Nowoczesne powierzchnie biurowe</h1>
+            <p>To nasza odpowiedź na oczekiwania najbardziej wymagających Klientów, poszukujących nowoczesnych powierzchni biurowych w inteligentnym budynku. </p>
+        </div>
+        <div>
+            <i class="fa fa-solid fa-angle-down arrow-down-navigation" id="scroll-icon"></i>
+        </div>
+    </div>
+    <!-- arrow down -->
+
     <!-- outer navigation -->
-    <div class="outer-navigation" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url('https://images.unsplash.com/photo-1443527394413-4b820fd08dde?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <!-- <div class="outer-navigation" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url('https://images.unsplash.com/photo-1443527394413-4b820fd08dde?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
         <div class="nav-content">
             
                 <div class="navbar">
                     <a href="#" class="logo">Business Center</a>
                     <ul>
-                        <li><a href="./index.html">Strona główna</a></li>
-                        <li><a href="./localization.html">Lokalizacja</a></li>
-                        <li><a href="./free_place.html">Dostępne Powierzchnie</a></li>
-                        <li><a href="./contact.html">Kontakt</a></li>
+                        <li><a href="./html/index.html">Strona główna</a></li>
+                        <li><a href="./html/localization.html">Lokalizacja</a></li>
+                        <li><a href="./html/free_place.html">Dostępne Powierzchnie</a></li>
+                        <li><a href="./html/contact.html">Kontakt</a></li>
                     </ul>
                 </div>
             
-            <div class="showcase-content">
-                <h1>Nowoczesne powierzchnie biurowe</h1>
-                <p>To nasza odpowiedź na oczekiwania najbardziej wymagających Klientów, poszukujących nowoczesnych powierzchni biurowych w inteligentnym budynku. </p>
-            </div>
-            <!-- arrow down -->
-            <div>
-                <i class="fa fa-solid fa-angle-down arrow-down-navigation" id="scroll-icon"></i>
-            </div>
             
         </div>
-    </div>
+    </div> -->
 
     <main>
         <div class="skyscrap-row">
@@ -50,8 +59,10 @@
 
             </div>
             <div class="text-container">
-                <h2>aaaaaa </h2>
-                <p>nie wiem, póki co blank text niech będzie</p>
+                <h2>Twój Biznes. Nasze Biuro. Razem Ku Nowym Wyzwaniom!</h2>
+                <p>Nowoczesne biura, doskonała lokalizacja, elastyczne przestrzenie. Dołącz do naszej </p>
+                <p>społeczności profesjonalistów i zapewnij swojej firmie inspirujące miejsce do rozwoju. </p>
+                <p>Skontaktuj się już dziś, aby odkryć, jak Business Center może wspomóc Twój biznes!</p>
             </div>
         </div>
 
@@ -63,18 +74,22 @@
         </div>
 
         <div class="contact-form">
-            <form>
+            <form action="https://formsubmit.co/viktoryia.manulenka@student.uj.edu.pl" method="POST">
                 <h2>Contact Us</h2>
+        
                 <label for="name">Your name: </label>
-                <input type="text" placeholder="Your name" id="name" required> <br />
-
+                <input type="text" placeholder="Your name" id="name" name="name" required> 
+        
                 <label for="email">Your email: </label>
-                <input type="email" placeholder="Your email" id="email" required> <br />
-                <label for="message">Your message</label><br/>
-                <textarea id="message" rows="8" required></textarea>
+                <input type="email" placeholder="Your email" id="email" name="email" required>
+        
+                <label for="message">Your message: </label>
+                <textarea id="message" placeholder="Your message" name="message" rows="8" required></textarea>
+        
                 <button type="submit">Send</button>
             </form>
         </div>
+        
     </main>
     <footer>
         <p>&copy; Skyscraper fictional webpage</p>

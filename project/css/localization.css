@@ -1,0 +1,8 @@
+.column-service {
+    display: flex;
+    align-items: center;
+}
+.column-service i {
+    font-size: 2rem;
+    margin-right: 10px;
+}

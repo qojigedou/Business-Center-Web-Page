@@ -1,0 +1,143 @@
+.navigation-bar {
+    padding: 0 120px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    height: 20vh;
+    z-index: 100;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.nav-static {
+    position: static;
+}
+.nav-static .logo,
+.nav-static ul li a {
+    color: black !important;
+}
+.nav-static ul li::after {
+    background-color: black!important;
+}
+
+.navigation-bar ul {
+    gap: 40px;
+    display: flex;
+    list-style: none;
+}
+
+.navigation-bar ul li{
+    position: relative;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.navigation-bar ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* .navbar, .navbarloc{
+    width: 85;
+    margin:auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ; */
+
+/* } */
+
+
+/* .navbar ul li, .navbarloc ul li{
+    font-size: 16px;
+    padding: 10px;
+    display: flex;
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+} */
+
+/* .navbar ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbarloc ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+} */
+
+.navigation-bar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+
+/* .navbarloc ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+} */
+
+.navigation-bar ul li:hover::after{
+    width: 100%;
+}
+
+.navigation-bar .logo{
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* .navbarloc .logoloc{
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+} */
+
+.nav-content{
+    max-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    height: 100vh;
+}
+
+.nav-content-loc{
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
