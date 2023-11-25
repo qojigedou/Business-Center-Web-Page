@@ -236,9 +236,6 @@ footer {
 }
 
 
-
-
-
 .slide_from_left {
   opacity: 0;
   transform: translateX(-50%);
@@ -255,4 +252,6 @@ footer {
   opacity: 1;
   transform: translateX(0);
 }
+
+
 
