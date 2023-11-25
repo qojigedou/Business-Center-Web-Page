@@ -6,3 +6,48 @@
     font-size: 2rem;
     margin-right: 10px;
 }
+
+.two-column-layout{
+    max-width: 800px; /* Adjust this value based on your design */
+    width: 100%;
+    padding: 20px; /* Space before and after the text */
+    padding-top: 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+/* Additional styling for demonstration purposes */
+.column {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 48%;
+}
+
+.service-nearby h1, .place-to-have h1{
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.service-type {
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.row-service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust this value based on your design */
+}
+
+/* Additional styling for demonstration purposes */
+.column-service {
+    width: 48%;
+    padding-bottom: 20px;
+}
