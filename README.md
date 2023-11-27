@@ -19,7 +19,7 @@ Project is created with:
 * HTML
 * CSS
 * JavaScript
-* FormSubmit (backend API responsible for th work of contact form)
+* FormSubmit (backend API responsible for the work of contact form)
 * GoogleMaps 
 
 ## Features
@@ -27,7 +27,9 @@ Project is created with:
 * animations made with IntersectionObserver
 * JavaScript made in OOP paradigm
 * contact form made with FormSubmit
+* image slideshow
 * image carousel
+* animated arrow-down image that scrolls to the next section of the page
 
 ## Setup
 
@@ -39,14 +41,12 @@ You can use serve to run the project:
 $ npm install
 $ sudo npm install -g serve
 $ serve .
-
 ```
 
 Open the Next Tab on a console and write down this:
 
 ```
-$ firefox http://localhost:3000 
-
+$ firefox http://localhost:3000
 ```
 It will open the website in firefox browser.
 
