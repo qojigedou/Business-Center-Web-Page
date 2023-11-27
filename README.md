@@ -1,6 +1,6 @@
 # Business Center - static website 
 
-Simple static website created with HTML, CSS and JavaScript 
+A simple static website created with HTML, CSS, and JavaScript 
 
 ## Table of Contents
 
@@ -11,7 +11,7 @@ Simple static website created with HTML, CSS and JavaScript
 
 ## General info
 
-The project was created to practice the usage of HTML, CSS, JavaScript for web technologies cource. It is static, with animations and contact form included.
+The project was created to practice the usage of HTML, CSS, and JavaScript for a web technologies course. It is a static website with animations and an included contact form.
 
 ## Technologies
 
@@ -24,30 +24,35 @@ Project is created with:
 
 ## Features
 
-* animations made with IntersectionObserver
-* JavaScript made in OOP paradigm
-* contact form made with FormSubmit
-* image slideshow
-* image carousel
-* animated arrow-down image that scrolls to the next section of the page
+* Animations implemented using IntersectionObserver.
+* JavaScript developed following the Object-Oriented Programming (OOP) paradigm.
+* Contact form integrated with FormSubmit.
+* Image slideshow feature.
+* Image carousel functionality.
+* Animated arrow-down image facilitating scrolling to the next section of the page.
 
 ## Setup
 
-To run this project, clone the repository and use live server extension in VSCode or VSCodium or you can use other tools to run the project on a server. 
+To run this project, clone the repository and utilize the Live Server extension in VSCode or VSCodium, or employ other tools to run the project on a server.
 
-You can use serve to run the project:
+Alternatively, you can use `serve` to run the project. Follow these steps:
+
+1. Install the necessary dependencies:
+```
+    $ npm install
+    $ sudo npm install -g serve
+```
+
+2. Run the project:
 
 ```
-$ npm install
-$ sudo npm install -g serve
 $ serve .
 ```
 
-Open the Next Tab on a console and write down this:
+In a new console tab, open the project in Firefox by executing the following command:
 
 ```
 $ firefox http://localhost:3000
 ```
-It will open the website in firefox browser.
 
-To check out the work of contact form, change the destination address in the contact.js file to your emal.
+To test the contact form, modify the destination address in the `contact.js` file to your email.
