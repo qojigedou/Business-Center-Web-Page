@@ -39,8 +39,8 @@ Alternatively, you can use `serve` to run the project. Follow these steps:
 
 1. Install the necessary dependencies:
 ```
-    $ npm install
-    $ sudo npm install -g serve
+$ npm install
+$ sudo npm install -g serve
 ```
 
 2. Run the project:
