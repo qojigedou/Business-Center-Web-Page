@@ -20,12 +20,21 @@ class appearOnScroll {
   }
 
   #observerCallback(entries) {
-    entries.forEach((entry) => {
+    for(let i = 0; i < entries.length; i++){
+      const entry = entries[i]
       if (entry.isIntersecting) {
-        entry.target.classList.toggle("show", entry.isIntersecting);
-        this.#observer.unobserve(entry.target);
+        if(i == 0){
+          setTimeout(()=>entry.target.classList.add("show", entry.isIntersecting), 1000)
+        }
+        else{
+          entry.target.classList.toggle("show", entry.isIntersecting);
+          
+          console.log(entry.target)
+        }
+        // this.#observer.unobserve(entry.target);
       }
-    })
+    }
+    
   }
 
   #addObserverToElements() {

@@ -246,6 +246,7 @@ footer {
   opacity: 0;
   transform: translateX(50%);
   transition: 800ms all ease-in-out;
+ 
 }
 
 .show {
