@@ -31,7 +31,7 @@ class appearOnScroll {
           
           console.log(entry.target)
         }
-        // this.#observer.unobserve(entry.target);
+        
       }
     }
     
