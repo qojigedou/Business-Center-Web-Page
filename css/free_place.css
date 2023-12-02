@@ -95,6 +95,9 @@
     overflow-y: hidden; /* Hidden overflow in vertical scroll */
     scroll-snap-type: x mandatory; /* Force the scroll to snap to the start of a scroll-snap area */
     gap: 8px; 
+    width: calc(100% - 16px);
+    margin: 8px;
+    flex: 0 0 calc(100% - 16px); /* Set width of card container */
 }
 
 
@@ -112,13 +115,6 @@
 }
 
 
-
-.card-container {
-/* ... */
-width: calc(100% - 16px);
-margin: 8px;
-flex: 0 0 calc(100% - 16px); /* Set width of card container */
-}
 
 .card-container::-webkit-scrollbar {
 display: none; /* Hide scrollbar in Chrome, Safari and Opera */

@@ -1,29 +1,45 @@
 import ScrollTo from './scrollTo.js'
-// import Slider from './Slider.js'
-// const slider = new Slider();
-let slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+class Slider {
+  #slideIndex = 0;
+  #slides = null;
+  #cardElements = null;
+  #cardContainer = null;
+
+
+  constructor() {
+      this.#slides = document.getElementsByClassName("mySlides");
+      this.#cardElements = document.querySelectorAll('.card');
+      this.#cardContainer = document.querySelector('.card-container');
+
+      this.showSlides();
+      this.setupCardClickHandlers();
+
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-} 
 
-const listOfCardElements = document.querySelectorAll('.card');
-const cardContainer = document.querySelector('.card-container');
+  showSlides() {
+      for (let i = 0; i < this.#slides.length; i++) {
+          this.#slides[i].style.display = "none";
+      }
 
-listOfCardElements.forEach((cardElement, index) => {
-  cardElement.addEventListener('click', () => {
-    const scrollLeft = index * listOfCardElements[0].offsetWidth;
-    cardContainer.scrollTo({ left: scrollLeft, behavior: 'smooth' });
-  });
-});
+      this.#slideIndex++;
+      if (this.#slideIndex > this.#slides.length) {
+          this.#slideIndex = 1;
+      }
 
+      this.#slides[this.#slideIndex - 1].style.display = "block";
+      setTimeout(() => this.showSlides(), 2000); // Change image every 2 seconds
+  }
+
+  setupCardClickHandlers() {
+      this.#cardElements.forEach((cardElement, index) => {
+          cardElement.addEventListener('click', () => {
+              const scrollLeft = index * this.#cardElements[0].offsetWidth;
+              this.#cardContainer.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+          });
+      });
+  }
+}
+
+const slider = new Slider();
 const scroll = new ScrollTo("arrow-down-navigation", "slideshow-container");
