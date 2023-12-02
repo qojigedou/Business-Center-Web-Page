@@ -1,5 +1,6 @@
 import ScrollTo from './scrollTo.js'
-
+// import Slider from './Slider.js'
+// const slider = new Slider();
 let slideIndex = 0;
 showSlides();
 

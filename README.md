@@ -5,6 +5,7 @@ A simple static website created with HTML, CSS, and JavaScript
 ## Table of Contents
 
 * [General info](#general-info)
+* [UML Diagram](#uml-diagram)
 * [Technologies](#technologies)
 * [Features](#features)
 * [Setup](#setup)
@@ -12,6 +13,10 @@ A simple static website created with HTML, CSS, and JavaScript
 ## General info
 
 The project was created to practice the usage of HTML, CSS, and JavaScript for a web technologies course. It is a static website with animations and an included contact form.
+
+## UML diagram
+
+![Alt text here](images/UseCaseUML.drawio.png)
 
 ## Technologies
 
