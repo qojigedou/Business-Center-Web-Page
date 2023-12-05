@@ -17,6 +17,7 @@ The project was created to practice the usage of HTML, CSS, and JavaScript for a
 ## UML diagram
 
 ![Alt text here](images/UseCaseUML.drawio.png)
+![Alt text here](images/classUML.drawio.png)
 
 ## Technologies
 
