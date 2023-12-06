@@ -66,4 +66,4 @@ In a new console tab, open the project in Firefox by executing the following com
 $ firefox http://localhost:3000
 ```
 
-To test the contact form, modify the destination address in the `contact.js` file to your email.
+To test the contact form, modify the destination address in the `index.html` file to your email.
